@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <title>ToDoList App</title>
+</head>
+<body>
+    <div class="container">
+        <h1><u>ToDoList App</u></h1>
+        <div class="task-form">
+            
+            <label for="taskInput">Task:</label>
+            <input type="text" id="taskInput" placeholder="Enter task..."><br><br>
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="personal">Personal</option>
+                <option value="work">Work</option>
+                <option value="study">Study</option>
+            </select>
+            <br><br>
+            <label for="deadline">Deadline:</label>
+            <input type="date" id="deadline" name="DeadLine">
+            <br><br>
+            <label for="priority">Priority:</label>
+            <select id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <br><br>
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+        <table id="taskList" class="task-list">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Category</th>
+                    <th>Deadline</th>
+                    <th>Priority</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            
+            </tbody>
+        </table>
+    </div>
+    <script src="list.js"></script>
+</body>
+</html>
